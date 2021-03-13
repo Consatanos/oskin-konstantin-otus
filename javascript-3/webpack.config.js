@@ -19,7 +19,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/,
+                test: /\.css|scss$/,
                 use: [
                     'style-loader',
                     {
@@ -28,7 +28,8 @@ module.exports = {
                             esModule: false
                         }
                     },
-                    'css-loader'
+                    'css-loader',
+                    'sass-loader'
                 ]
             }
         ]

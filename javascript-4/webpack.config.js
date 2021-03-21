@@ -5,11 +5,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/index.ts'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
+    },
+    resolve: {
+        extensions: [".ts", ".tsx", ".js"]
     },
     module: {
         rules: [
@@ -18,6 +21,12 @@ module.exports = {
                 exclude: '/node_modules/',
                 use: {
                     loader: 'babel-loader'
+                }
+            },
+            {
+                test: /\.ts$/,
+                use: {
+                    loader: 'ts-loader'
                 }
             },
             {

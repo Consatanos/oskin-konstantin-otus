@@ -1,4 +1,6 @@
-export const simpleTree = [
+import { Tree } from "./models";
+
+export const simpleTree: Tree[] = [
     {
         "id": 1,
         "items": [

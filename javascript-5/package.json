@@ -1,0 +1,10 @@
+{
+  "name": "javascript-5",
+  "version": "1.0.0",
+  "scripts": {
+    "tree": "node tree.js"
+  },
+  "dependencies": {
+    "async": "^3.2.0"
+  }
+}

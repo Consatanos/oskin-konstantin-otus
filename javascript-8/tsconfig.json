@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "jsx": "react",
         "alwaysStrict": true,
         "target": "es6",
         "module": "commonjs",

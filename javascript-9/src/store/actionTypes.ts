@@ -1,0 +1,1 @@
+export const REMOVE_CITY = 'REMOVE_CITY';

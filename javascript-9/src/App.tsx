@@ -17,16 +17,14 @@ const history = createBrowserHistory();
 function App() {
     return (
         <Provider store={store}>
-            <div className="App">
-                <Router history={history}>
-                    <Switch>
-                        <Route exact path="/">
-                            <CityList />
-                        </Route>
-                        <Route path="/:id" children={<City />} />
-                    </Switch>
-                </Router>
-            </div>
+            <Router history={history}>
+                <Switch>
+                    <Route exact path="/">
+                        <CityList />
+                    </Route>
+                    <Route path="/:id" children={<City />} />
+                </Switch>
+            </Router>
         </Provider>
     );
 }

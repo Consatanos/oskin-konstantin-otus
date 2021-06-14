@@ -12,8 +12,7 @@ const City = ({ cities }: { cities: CityModel[] }) => {
 
     return (
         <>
-            <Link to="/">Назад</Link>
-            <br />
+            <Link to="/">Назад</Link><br />
             Местоположение: {city.name}<br />
             Температура: {city.weather.temperature} {getTemperatureUnits(city.weather.temperatureUnits)}<br />
             Направление ветра: {getWindDirection(city.weather.windDirection)}<br />
